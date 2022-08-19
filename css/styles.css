@@ -2,7 +2,18 @@
 #dropdownMenuButton1{
   float: right;
 }
+#duedate{
+  width: 38rem;
+}
 
+#search{
+  width: 18rem;
+}
+
+.btn-outline-success{
+  margin-top: 20px;
+  margin-left: 290px;
+}
 .col{
   flex-basis: 0;
   flex-grow: 0;
@@ -12,4 +23,13 @@
 }
 .container-fluid{
   padding: 3% 15% 7%;
+}
+
+.fa-solid{
+  padding-right: 10px;
+}
+
+.input-group{
+  width: 38rem;
+  flex-wrap: nowrap;
 }
