@@ -1,0 +1,15 @@
+
+#dropdownMenuButton1{
+  float: right;
+}
+
+.col{
+  flex-basis: 0;
+  flex-grow: 0;
+}
+.container{
+  padding-top: 15px;
+}
+.container-fluid{
+  padding: 3% 15% 7%;
+}
