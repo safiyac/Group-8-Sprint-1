@@ -29,14 +29,19 @@
       <h1>Task Manager</h1>
 
       <!-- Search Bar -->
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <input type="text" id="search" class="form-control" placeholder="Search All Tasks" aria-describedby="searchbox">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto">
+            <div class="input-group mb-3" style="width: 18rem; flex-wrap: 0;">
+              <input type="text" id="search" class="form-control" placeholder="Search.." aria-describedby="searchbox">
+              <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></button>
       </div>
 
-      <!-- Tasks Section -->
+
+      <!-- Page 1 Tasks Section -->
 
       <div class="container">
         <div class="row">
@@ -44,13 +49,13 @@
             <div class="card border-dark mb-3" style="width: 18rem">
               <div class="card-header"><i class="fa-solid fa-calendar"></i>Today's Tasks</div>
               <div class="card-body">
-                <a href="#" class="card-link">Pick up kids from daycare</a>
+                <a href="#" class="card-link">Pick kids up from day care</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card border-dark mb-3" style="width: 18rem">
-              <div class="card-header"><i class="fa-solid fa-calendar"></i>Upcoming Tasks</div>
+              <div class="card-header"><i class="fa-solid fa-clock"></i>Upcoming Tasks</div>
               <div class="card-body">
                 <a href="#" class="card-link">Clean garage</a>
               </div>
@@ -79,6 +84,68 @@
           </div>
         </div>
       </div>
+
+      <!-- Page 2 Task Selector -->
+
+      <section id="tasks">
+
+        <h1>Add New Task</h1>
+
+        <div class="container">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Task Name" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Chores</a></li>
+              <li><a class="dropdown-item" href="#">Errands</a></li>
+              <li><a class="dropdown-item" href="#">Childcare</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Task Description" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Wash Dishes</a></li>
+              <li><a class="dropdown-item" href="#">Pick up groceries</a></li>
+              <li><a class="dropdown-item" href="#">Clean garage</a></li>
+              <li><a class="dropdown-item" href="#">Swiffer floors</a></li>
+              <li><a class="dropdown-item" href="#">Pick kids up from day care</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Assigned To" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Safiya</a></li>
+              <li><a class="dropdown-item" href="#">Jaida</a></li>
+              <li><a class="dropdown-item" href="#">Hareg</a></li>
+              <li><a class="dropdown-item" href="#">Hanna</a></li>
+              <li><a class="dropdown-item" href="#">ChiChi</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Other</a></li>
+            </ul>
+          </div>
+          <p><strong>Due Date</strong></p>
+          <div class="input-group mb-3">
+            <input type="date" class="form-control" id="duedate" name="duedate">
+          </div>
+          <button type="button" class="btn btn-outline-success btn-lg" style="padding-left: 25px"><i class="fa-solid fa-plus"></i></button>
+
+
+        </div>
+
 
 <!-- Page 3-->
  <ul 
@@ -117,8 +184,7 @@
 
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 
 </html>
 
